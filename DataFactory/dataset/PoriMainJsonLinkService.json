@@ -1,0 +1,3114 @@
+{
+	"name": "PoriMainJsonLinkService",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PoriBlobStorageFromDataFactory",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "pori.json",
+				"folderPath": "Declarations",
+				"container": "pori-blob-container"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"query": {
+					"type": "string"
+				},
+				"meta": {
+					"type": "null"
+				},
+				"deepsearch": {
+					"type": "boolean"
+				},
+				"results": {
+					"type": "object",
+					"properties": {
+						"paginator": {
+							"type": "object",
+							"properties": {
+								"count": {
+									"type": "integer"
+								},
+								"num_pages": {
+									"type": "integer"
+								},
+								"per_page": {
+									"type": "integer"
+								}
+							}
+						},
+						"number": {
+							"type": "integer"
+						},
+						"object_list": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"guid": {
+										"type": "string"
+									},
+									"infocard": {
+										"type": "object",
+										"properties": {
+											"first_name": {
+												"type": "string"
+											},
+											"patronymic": {
+												"type": "string"
+											},
+											"last_name": {
+												"type": "string"
+											},
+											"office": {
+												"type": "string"
+											},
+											"position": {
+												"type": "string"
+											},
+											"source": {
+												"type": "string"
+											},
+											"id": {
+												"type": "string"
+											},
+											"url": {
+												"type": "string"
+											},
+											"document_type": {
+												"type": "string"
+											},
+											"is_corrected": {
+												"type": "boolean"
+											},
+											"declaration_year": {
+												"type": "string"
+											},
+											"created_date": {
+												"type": "null"
+											}
+										}
+									},
+									"raw_source": {
+										"type": "object",
+										"properties": {
+											"banks": {
+												"type": "object",
+												"properties": {
+													"45": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"sum": {
+																	"type": "string"
+																},
+																"sum_comment": {
+																	"type": "string"
+																},
+																"sum_comment_hidden": {
+																	"type": "boolean"
+																},
+																"sum_comment_unclear": {
+																	"type": "boolean"
+																},
+																"sum_foreign": {
+																	"type": "string"
+																},
+																"sum_foreign_comment": {
+																	"type": "string"
+																},
+																"sum_foreign_units": {
+																	"type": "string"
+																},
+																"sum_hidden": {
+																	"type": "boolean"
+																},
+																"sum_unclear": {
+																	"type": "boolean"
+																},
+																"sum_units": {
+																	"type": "string"
+																},
+																"sum_units_hidden": {
+																	"type": "boolean"
+																}
+															}
+														}
+													},
+													"46": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"sum": {
+																	"type": "string"
+																},
+																"sum_comment": {
+																	"type": "string"
+																},
+																"sum_comment_hidden": {
+																	"type": "boolean"
+																},
+																"sum_foreign": {
+																	"type": "string"
+																},
+																"sum_foreign_comment": {
+																	"type": "string"
+																},
+																"sum_foreign_units": {
+																	"type": "string"
+																},
+																"sum_hidden": {
+																	"type": "boolean"
+																},
+																"sum_unclear": {
+																	"type": "boolean"
+																},
+																"sum_units": {
+																	"type": "string"
+																}
+															}
+														}
+													},
+													"47": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"sum": {
+																	"type": "string"
+																},
+																"sum_comment": {
+																	"type": "string"
+																},
+																"sum_comment_hidden": {
+																	"type": "boolean"
+																},
+																"sum_foreign": {
+																	"type": "string"
+																},
+																"sum_foreign_comment": {
+																	"type": "string"
+																},
+																"sum_foreign_units": {
+																	"type": "string"
+																},
+																"sum_units": {
+																	"type": "string"
+																}
+															}
+														}
+													},
+													"48": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"sum": {
+																	"type": "string"
+																},
+																"sum_comment": {
+																	"type": "string"
+																},
+																"sum_foreign": {
+																	"type": "string"
+																},
+																"sum_foreign_comment": {
+																	"type": "string"
+																},
+																"sum_foreign_hidden": {
+																	"type": "boolean"
+																},
+																"sum_foreign_units": {
+																	"type": "string"
+																},
+																"sum_units": {
+																	"type": "string"
+																}
+															}
+														}
+													},
+													"49": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"sum": {
+																	"type": "string"
+																},
+																"sum_comment": {
+																	"type": "string"
+																},
+																"sum_foreign": {
+																	"type": "string"
+																},
+																"sum_foreign_comment": {
+																	"type": "string"
+																},
+																"sum_foreign_units": {
+																	"type": "string"
+																},
+																"sum_units": {
+																	"type": "string"
+																}
+															}
+														}
+													},
+													"50": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"sum": {
+																	"type": "string"
+																},
+																"sum_comment": {
+																	"type": "string"
+																},
+																"sum_foreign": {
+																	"type": "string"
+																},
+																"sum_foreign_comment": {
+																	"type": "string"
+																},
+																"sum_foreign_units": {
+																	"type": "string"
+																},
+																"sum_units": {
+																	"type": "string"
+																}
+															}
+														}
+													},
+													"51": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"sum": {
+																	"type": "string"
+																},
+																"sum_comment": {
+																	"type": "string"
+																},
+																"sum_comment_hidden": {
+																	"type": "boolean"
+																},
+																"sum_foreign": {
+																	"type": "string"
+																},
+																"sum_foreign_comment": {
+																	"type": "string"
+																},
+																"sum_foreign_units": {
+																	"type": "string"
+																},
+																"sum_hidden": {
+																	"type": "boolean"
+																},
+																"sum_unclear": {
+																	"type": "boolean"
+																},
+																"sum_units": {
+																	"type": "string"
+																}
+															}
+														}
+													},
+													"52": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"sum": {
+																	"type": "string"
+																},
+																"sum_comment": {
+																	"type": "string"
+																},
+																"sum_comment_hidden": {
+																	"type": "boolean"
+																},
+																"sum_foreign": {
+																	"type": "string"
+																},
+																"sum_foreign_comment": {
+																	"type": "string"
+																},
+																"sum_foreign_units": {
+																	"type": "string"
+																},
+																"sum_units": {
+																	"type": "string"
+																}
+															}
+														}
+													},
+													"53": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"sum": {
+																	"type": "string"
+																},
+																"sum_comment": {
+																	"type": "string"
+																},
+																"sum_comment_hidden": {
+																	"type": "boolean"
+																},
+																"sum_foreign": {
+																	"type": "string"
+																},
+																"sum_foreign_comment": {
+																	"type": "string"
+																},
+																"sum_foreign_units": {
+																	"type": "string"
+																},
+																"sum_hidden": {
+																	"type": "boolean"
+																},
+																"sum_units": {
+																	"type": "string"
+																}
+															}
+														}
+													}
+												}
+											},
+											"declaration": {
+												"type": "object",
+												"properties": {
+													"additional_info": {
+														"type": "boolean"
+													},
+													"additional_info_text": {
+														"type": "string"
+													},
+													"date": {
+														"type": "string"
+													},
+													"notfull": {
+														"type": "boolean"
+													},
+													"notfull_lostpages": {
+														"type": "string"
+													},
+													"url": {
+														"type": "string"
+													}
+												}
+											},
+											"estate": {
+												"type": "object",
+												"properties": {
+													"23": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"address": {
+																	"type": "string"
+																},
+																"address_hidden": {
+																	"type": "boolean"
+																},
+																"address_unclear": {
+																	"type": "boolean"
+																},
+																"costs": {
+																	"type": "string"
+																},
+																"costs_comment": {
+																	"type": "string"
+																},
+																"costs_hidden": {
+																	"type": "boolean"
+																},
+																"costs_rent": {
+																	"type": "string"
+																},
+																"costs_rent_comment": {
+																	"type": "string"
+																},
+																"costs_rent_hidden": {
+																	"type": "boolean"
+																},
+																"region": {
+																	"type": "string"
+																},
+																"region_hidden": {
+																	"type": "boolean"
+																},
+																"space": {
+																	"type": "string"
+																},
+																"space_comment": {
+																	"type": "string"
+																},
+																"space_comment_hidden": {
+																	"type": "boolean"
+																},
+																"space_unclear": {
+																	"type": "boolean"
+																},
+																"space_units": {
+																	"type": "string"
+																},
+																"space_units_hidden": {
+																	"type": "boolean"
+																},
+																"space_units_unclear": {
+																	"type": "boolean"
+																}
+															}
+														}
+													},
+													"25": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"address": {
+																	"type": "string"
+																},
+																"address_hidden": {
+																	"type": "boolean"
+																},
+																"address_unclear": {
+																	"type": "boolean"
+																},
+																"costs": {
+																	"type": "string"
+																},
+																"costs_comment": {
+																	"type": "string"
+																},
+																"costs_hidden": {
+																	"type": "boolean"
+																},
+																"costs_rent": {
+																	"type": "string"
+																},
+																"costs_rent_comment": {
+																	"type": "string"
+																},
+																"costs_rent_hidden": {
+																	"type": "boolean"
+																},
+																"region": {
+																	"type": "string"
+																},
+																"region_hidden": {
+																	"type": "boolean"
+																},
+																"region_unclear": {
+																	"type": "boolean"
+																},
+																"space": {
+																	"type": "string"
+																},
+																"space_comment": {
+																	"type": "string"
+																},
+																"space_comment_hidden": {
+																	"type": "boolean"
+																},
+																"space_comment_unclear": {
+																	"type": "boolean"
+																},
+																"space_hidden": {
+																	"type": "boolean"
+																},
+																"space_unclear": {
+																	"type": "boolean"
+																},
+																"space_units": {
+																	"type": "string"
+																}
+															}
+														}
+													},
+													"31": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"address": {
+																	"type": "string"
+																},
+																"address_hidden": {
+																	"type": "boolean"
+																},
+																"address_unclear": {
+																	"type": "boolean"
+																},
+																"costs_property": {
+																	"type": "string"
+																},
+																"costs_property_comment": {
+																	"type": "string"
+																},
+																"costs_property_hidden": {
+																	"type": "boolean"
+																},
+																"costs_rent": {
+																	"type": "string"
+																},
+																"costs_rent_comment": {
+																	"type": "string"
+																},
+																"costs_rent_hidden": {
+																	"type": "boolean"
+																},
+																"region": {
+																	"type": "string"
+																},
+																"region_hidden": {
+																	"type": "boolean"
+																},
+																"region_unclear": {
+																	"type": "boolean"
+																},
+																"space": {
+																	"type": "string"
+																},
+																"space_comment": {
+																	"type": "string"
+																},
+																"space_comment_hidden": {
+																	"type": "boolean"
+																},
+																"space_units": {
+																	"type": "string"
+																}
+															}
+														}
+													}
+												}
+											},
+											"general": {
+												"type": "object",
+												"properties": {
+													"addresses": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"place": {
+																	"type": "string"
+																},
+																"place_address": {
+																	"type": "string"
+																},
+																"place_address_hidden": {
+																	"type": "boolean"
+																},
+																"place_address_unclear": {
+																	"type": "boolean"
+																},
+																"place_city": {
+																	"type": "string"
+																},
+																"place_city_hidden": {
+																	"type": "boolean"
+																},
+																"place_city_type": {
+																	"type": "string"
+																},
+																"place_city_type_hidden": {
+																	"type": "boolean"
+																},
+																"place_district": {
+																	"type": "string"
+																},
+																"place_district_hidden": {
+																	"type": "boolean"
+																},
+																"place_hidden": {
+																	"type": "boolean"
+																},
+																"place_unclear": {
+																	"type": "boolean"
+																}
+															}
+														}
+													},
+													"family": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"family_name": {
+																	"type": "string"
+																},
+																"inn": {
+																	"type": "string"
+																},
+																"inn_hidden": {
+																	"type": "boolean"
+																},
+																"name_hidden": {
+																	"type": "boolean"
+																},
+																"name_unclear": {
+																	"type": "boolean"
+																},
+																"relations": {
+																	"type": "string"
+																},
+																"relations_hidden": {
+																	"type": "boolean"
+																},
+																"relations_other": {
+																	"type": "string"
+																}
+															}
+														}
+													},
+													"family_raw": {
+														"type": "string"
+													},
+													"full_name": {
+														"type": "string"
+													},
+													"full_name_for_sorting": {
+														"type": "string"
+													},
+													"full_name_suggest": {
+														"type": "object",
+														"properties": {
+															"input": {
+																"type": "array",
+																"items": {
+																	"type": "string"
+																}
+															}
+														}
+													},
+													"inn": {
+														"type": "string"
+													},
+													"inn_hidden": {
+														"type": "boolean"
+													},
+													"inn_unclear": {
+														"type": "boolean"
+													},
+													"last_name": {
+														"type": "string"
+													},
+													"last_name_hidden": {
+														"type": "boolean"
+													},
+													"last_name_unclear": {
+														"type": "boolean"
+													},
+													"name": {
+														"type": "string"
+													},
+													"name_hidden": {
+														"type": "boolean"
+													},
+													"name_unclear": {
+														"type": "boolean"
+													},
+													"patronymic": {
+														"type": "string"
+													},
+													"patronymic_hidden": {
+														"type": "boolean"
+													},
+													"patronymic_unclear": {
+														"type": "boolean"
+													},
+													"post": {
+														"type": "object",
+														"properties": {
+															"candidate": {
+																"type": "string"
+															},
+															"office": {
+																"type": "string"
+															},
+															"office_hidden": {
+																"type": "boolean"
+															},
+															"office_unclear": {
+																"type": "boolean"
+															},
+															"post": {
+																"type": "string"
+															},
+															"post_hidden": {
+																"type": "boolean"
+															},
+															"post_unclear": {
+																"type": "boolean"
+															},
+															"region": {
+																"type": "string"
+															},
+															"region_hidden": {
+																"type": "boolean"
+															},
+															"region_unclear": {
+																"type": "boolean"
+															}
+														}
+													}
+												}
+											},
+											"income": {
+												"type": "object",
+												"properties": {
+													"5": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"family_hidden": {
+																"type": "boolean"
+															},
+															"family_unclear": {
+																"type": "boolean"
+															},
+															"value": {
+																"type": "string"
+															},
+															"value_hidden": {
+																"type": "boolean"
+															},
+															"value_unclear": {
+																"type": "boolean"
+															}
+														}
+													},
+													"6": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"family_hidden": {
+																"type": "boolean"
+															},
+															"family_unclear": {
+																"type": "boolean"
+															},
+															"value": {
+																"type": "string"
+															},
+															"value_hidden": {
+																"type": "boolean"
+															},
+															"value_unclear": {
+																"type": "boolean"
+															}
+														}
+													},
+													"7": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"family_hidden": {
+																"type": "boolean"
+															},
+															"source_name": {
+																"type": "string"
+															},
+															"source_name_hidden": {
+																"type": "boolean"
+															},
+															"value": {
+																"type": "string"
+															},
+															"value_hidden": {
+																"type": "boolean"
+															}
+														}
+													},
+													"8": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"family_hidden": {
+																"type": "boolean"
+															},
+															"value": {
+																"type": "string"
+															},
+															"value_hidden": {
+																"type": "boolean"
+															}
+														}
+													},
+													"9": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"family_hidden": {
+																"type": "boolean"
+															},
+															"value": {
+																"type": "string"
+															},
+															"value_unclear": {
+																"type": "boolean"
+															}
+														}
+													},
+													"10": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"value": {
+																"type": "string"
+															},
+															"value_unclear": {
+																"type": "boolean"
+															}
+														}
+													},
+													"11": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"value": {
+																"type": "string"
+															}
+														}
+													},
+													"12": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"value": {
+																"type": "string"
+															}
+														}
+													},
+													"13": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"value": {
+																"type": "string"
+															}
+														}
+													},
+													"14": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"value": {
+																"type": "string"
+															}
+														}
+													},
+													"15": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"value": {
+																"type": "string"
+															}
+														}
+													},
+													"16": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"value": {
+																"type": "string"
+															}
+														}
+													},
+													"17": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"value": {
+																"type": "string"
+															}
+														}
+													},
+													"18": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"value": {
+																"type": "string"
+															}
+														}
+													},
+													"19": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"value": {
+																"type": "string"
+															},
+															"value_unclear": {
+																"type": "boolean"
+															}
+														}
+													},
+													"20": {
+														"type": "object",
+														"properties": {
+															"comment": {
+																"type": "string"
+															},
+															"comment_unclear": {
+																"type": "boolean"
+															},
+															"family": {
+																"type": "string"
+															},
+															"family_comment": {
+																"type": "string"
+															},
+															"family_comment_unclear": {
+																"type": "boolean"
+															},
+															"value": {
+																"type": "string"
+															},
+															"value_unclear": {
+																"type": "boolean"
+															}
+														}
+													}
+												}
+											},
+											"intro": {
+												"type": "object",
+												"properties": {
+													"declaration_year": {
+														"type": "string"
+													},
+													"doc_type": {
+														"type": "string"
+													},
+													"isnotdeclaration": {
+														"type": "string"
+													}
+												}
+											},
+											"liabilities": {
+												"type": "object",
+												"properties": {
+													"54": {
+														"type": "object",
+														"properties": {
+															"sum": {
+																"type": "string"
+															},
+															"sum_comment": {
+																"type": "string"
+															},
+															"sum_comment_hidden": {
+																"type": "boolean"
+															},
+															"sum_foreign": {
+																"type": "string"
+															},
+															"sum_foreign_comment": {
+																"type": "string"
+															},
+															"sum_foreign_hidden": {
+																"type": "boolean"
+															},
+															"sum_hidden": {
+																"type": "boolean"
+															},
+															"sum_unclear": {
+																"type": "boolean"
+															}
+														}
+													},
+													"55": {
+														"type": "object",
+														"properties": {
+															"sum": {
+																"type": "string"
+															},
+															"sum_comment": {
+																"type": "string"
+															},
+															"sum_foreign": {
+																"type": "string"
+															},
+															"sum_foreign_comment": {
+																"type": "string"
+															}
+														}
+													},
+													"56": {
+														"type": "object",
+														"properties": {
+															"sum": {
+																"type": "string"
+															},
+															"sum_comment": {
+																"type": "string"
+															},
+															"sum_foreign": {
+																"type": "string"
+															},
+															"sum_foreign_comment": {
+																"type": "string"
+															},
+															"sum_unclear": {
+																"type": "boolean"
+															}
+														}
+													},
+													"57": {
+														"type": "object",
+														"properties": {
+															"sum": {
+																"type": "string"
+															},
+															"sum_comment": {
+																"type": "string"
+															},
+															"sum_comment_hidden": {
+																"type": "boolean"
+															},
+															"sum_comment_unclear": {
+																"type": "boolean"
+															},
+															"sum_foreign": {
+																"type": "string"
+															},
+															"sum_foreign_comment": {
+																"type": "string"
+															},
+															"sum_hidden": {
+																"type": "boolean"
+															},
+															"sum_unclear": {
+																"type": "boolean"
+															}
+														}
+													},
+													"58": {
+														"type": "object",
+														"properties": {
+															"sum": {
+																"type": "string"
+															},
+															"sum_comment": {
+																"type": "string"
+															},
+															"sum_comment_hidden": {
+																"type": "boolean"
+															},
+															"sum_foreign": {
+																"type": "string"
+															},
+															"sum_foreign_comment": {
+																"type": "string"
+															},
+															"sum_hidden": {
+																"type": "boolean"
+															},
+															"sum_unclear": {
+																"type": "boolean"
+															}
+														}
+													},
+													"59": {
+														"type": "object",
+														"properties": {
+															"sum": {
+																"type": "string"
+															},
+															"sum_comment": {
+																"type": "string"
+															},
+															"sum_foreign": {
+																"type": "string"
+															},
+															"sum_foreign_comment": {
+																"type": "string"
+															}
+														}
+													},
+													"60": {
+														"type": "object",
+														"properties": {
+															"sum": {
+																"type": "string"
+															},
+															"sum_comment": {
+																"type": "string"
+															},
+															"sum_comment_hidden": {
+																"type": "boolean"
+															},
+															"sum_foreign": {
+																"type": "string"
+															},
+															"sum_foreign_comment": {
+																"type": "string"
+															},
+															"sum_hidden": {
+																"type": "boolean"
+															},
+															"sum_unclear": {
+																"type": "boolean"
+															}
+														}
+													},
+													"61": {
+														"type": "object",
+														"properties": {
+															"sum": {
+																"type": "string"
+															},
+															"sum_comment": {
+																"type": "string"
+															},
+															"sum_foreign": {
+																"type": "string"
+															},
+															"sum_foreign_comment": {
+																"type": "string"
+															}
+														}
+													},
+													"62": {
+														"type": "object",
+														"properties": {
+															"sum": {
+																"type": "string"
+															},
+															"sum_comment": {
+																"type": "string"
+															},
+															"sum_foreign": {
+																"type": "string"
+															},
+															"sum_foreign_comment": {
+																"type": "string"
+															}
+														}
+													},
+													"63": {
+														"type": "object",
+														"properties": {
+															"sum": {
+																"type": "string"
+															},
+															"sum_comment": {
+																"type": "string"
+															},
+															"sum_comment_hidden": {
+																"type": "boolean"
+															},
+															"sum_foreign": {
+																"type": "string"
+															},
+															"sum_foreign_comment": {
+																"type": "string"
+															}
+														}
+													},
+													"64": {
+														"type": "object",
+														"properties": {
+															"sum": {
+																"type": "string"
+															},
+															"sum_comment": {
+																"type": "string"
+															},
+															"sum_comment_hidden": {
+																"type": "boolean"
+															},
+															"sum_foreign": {
+																"type": "string"
+															},
+															"sum_foreign_comment": {
+																"type": "string"
+															},
+															"sum_unclear": {
+																"type": "boolean"
+															}
+														}
+													}
+												}
+											},
+											"names_autocomplete": {
+												"type": "array",
+												"items": {
+													"type": "string"
+												}
+											},
+											"persons": {
+												"type": "array",
+												"items": {
+													"type": "string"
+												}
+											},
+											"source": {
+												"type": "string"
+											},
+											"vehicle": {
+												"type": "object",
+												"properties": {
+													"35": {
+														"type": "array",
+														"items": {
+															"type": "object",
+															"properties": {
+																"brand": {
+																	"type": "string"
+																},
+																"brand_info": {
+																	"type": "string"
+																},
+																"brand_info_hidden": {
+																	"type": "boolean"
+																},
+																"brand_info_unclear": {
+																	"type": "boolean"
+																},
+																"brand_unclear": {
+																	"type": "boolean"
+																},
+																"sum": {
+																	"type": "string"
+																},
+																"sum_comment": {
+																	"type": "string"
+																},
+																"sum_hidden": {
+																	"type": "boolean"
+																},
+																"sum_rent": {
+																	"type": "string"
+																},
+																"sum_rent_comment": {
+																	"type": "string"
+																},
+																"sum_rent_hidden": {
+																	"type": "boolean"
+																},
+																"sum_unclear": {
+																	"type": "boolean"
+																},
+																"year": {
+																	"type": "string"
+																},
+																"year_unclear": {
+																	"type": "boolean"
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									},
+									"unified_source": {
+										"type": "object",
+										"properties": {
+											"id": {
+												"type": "string"
+											},
+											"created_date": {
+												"type": "string"
+											},
+											"lastmodified_date": {
+												"type": "string"
+											},
+											"data": {
+												"type": "object",
+												"properties": {
+													"step_0": {
+														"type": "object",
+														"properties": {
+															"declarationType": {
+																"type": "string"
+															},
+															"declarationYear1": {
+																"type": "string"
+															}
+														}
+													},
+													"step_1": {
+														"type": "object",
+														"properties": {
+															"firstname": {
+																"type": "string"
+															},
+															"lastname": {
+																"type": "string"
+															},
+															"middlename": {
+																"type": "string"
+															},
+															"region_declcomua": {
+																"type": "string"
+															},
+															"workPost": {
+																"type": "string"
+															},
+															"workPlace": {
+																"type": "string"
+															},
+															"actual_street": {
+																"type": "string"
+															},
+															"region": {
+																"type": "string"
+															},
+															"district": {
+																"type": "string"
+															},
+															"city": {
+																"type": "string"
+															},
+															"street": {
+																"type": "string"
+															}
+														}
+													},
+													"step_2": {
+														"type": "object",
+														"properties": {
+															"1": {
+																"type": "object",
+																"properties": {
+																	"changedName": {
+																		"type": "boolean"
+																	},
+																	"subjectRelation": {
+																		"type": "string"
+																	},
+																	"bio_declomua": {
+																		"type": "string"
+																	},
+																	"citizenship": {
+																		"type": "string"
+																	},
+																	"eng_lastname": {
+																		"type": "string"
+																	},
+																	"no_taxNumber": {
+																		"type": "string"
+																	},
+																	"eng_firstname": {
+																		"type": "string"
+																	},
+																	"eng_middlename": {
+																		"type": "string"
+																	},
+																	"isNotApplicable": {
+																		"type": "string"
+																	},
+																	"previous_lastname": {
+																		"type": "string"
+																	},
+																	"previous_firstname": {
+																		"type": "string"
+																	},
+																	"previous_middlename": {
+																		"type": "string"
+																	},
+																	"previous_eng_lastname": {
+																		"type": "string"
+																	},
+																	"previous_eng_firstname": {
+																		"type": "string"
+																	},
+																	"previous_eng_middlename": {
+																		"type": "string"
+																	}
+																}
+															},
+															"2": {
+																"type": "object",
+																"properties": {
+																	"changedName": {
+																		"type": "boolean"
+																	},
+																	"subjectRelation": {
+																		"type": "string"
+																	},
+																	"bio_declomua": {
+																		"type": "string"
+																	},
+																	"citizenship": {
+																		"type": "string"
+																	},
+																	"eng_lastname": {
+																		"type": "string"
+																	},
+																	"no_taxNumber": {
+																		"type": "string"
+																	},
+																	"eng_firstname": {
+																		"type": "string"
+																	},
+																	"eng_middlename": {
+																		"type": "string"
+																	},
+																	"isNotApplicable": {
+																		"type": "string"
+																	},
+																	"previous_lastname": {
+																		"type": "string"
+																	},
+																	"previous_firstname": {
+																		"type": "string"
+																	},
+																	"previous_middlename": {
+																		"type": "string"
+																	},
+																	"previous_eng_lastname": {
+																		"type": "string"
+																	},
+																	"previous_eng_firstname": {
+																		"type": "string"
+																	},
+																	"previous_eng_middlename": {
+																		"type": "string"
+																	}
+																}
+															}
+														}
+													},
+													"step_3": {
+														"type": "object",
+														"properties": {
+															"1": {
+																"type": "object",
+																"properties": {
+																	"city": {
+																		"type": "string"
+																	},
+																	"person": {
+																		"type": "string"
+																	},
+																	"place_oblast_declcomua": {
+																		"type": "string"
+																	},
+																	"place_address_declcomua": {
+																		"type": "string"
+																	},
+																	"rights": {
+																		"type": "object",
+																		"properties": {
+																			"1": {
+																				"type": "object",
+																				"properties": {
+																					"citizen": {
+																						"type": "string"
+																					},
+																					"ua_city": {
+																						"type": "string"
+																					},
+																					"ua_street": {
+																						"type": "string"
+																					},
+																					"ua_lastname": {
+																						"type": "string"
+																					},
+																					"ua_postCode": {
+																						"type": "string"
+																					},
+																					"eng_lastname": {
+																						"type": "string"
+																					},
+																					"eng_postCode": {
+																						"type": "string"
+																					},
+																					"rightBelongs": {
+																						"type": "string"
+																					},
+																					"ua_firstname": {
+																						"type": "string"
+																					},
+																					"ukr_lastname": {
+																						"type": "string"
+																					},
+																					"eng_firstname": {
+																						"type": "string"
+																					},
+																					"ownershipType": {
+																						"type": "string"
+																					},
+																					"ua_middlename": {
+																						"type": "string"
+																					},
+																					"ua_streetType": {
+																						"type": "string"
+																					},
+																					"ukr_firstname": {
+																						"type": "string"
+																					},
+																					"eng_middlename": {
+																						"type": "string"
+																					},
+																					"otherOwnership": {
+																						"type": "string"
+																					},
+																					"ukr_middlename": {
+																						"type": "string"
+																					},
+																					"rights_cityPath": {
+																						"type": "string"
+																					},
+																					"ua_company_name": {
+																						"type": "string"
+																					},
+																					"eng_company_name": {
+																						"type": "string"
+																					},
+																					"ukr_company_name": {
+																						"type": "string"
+																					},
+																					"percent-ownership": {
+																						"type": "string"
+																					},
+																					"ua_street_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_houseNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ukr_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_housePartNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_apartmentsNum_extendedstatus": {
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"country": {
+																		"type": "string"
+																	},
+																	"cityPath": {
+																		"type": "string"
+																	},
+																	"costDate": {
+																		"type": "string"
+																	},
+																	"district": {
+																		"type": "string"
+																	},
+																	"postCode": {
+																		"type": "string"
+																	},
+																	"iteration": {
+																		"type": "string"
+																	},
+																	"totalArea": {
+																		"type": "number"
+																	},
+																	"ua_street": {
+																		"type": "string"
+																	},
+																	"owningDate": {
+																		"type": "string"
+																	},
+																	"objectType": {
+																		"type": "string"
+																	},
+																	"otherObjectType": {
+																		"type": "string"
+																	},
+																	"ua_cityType": {
+																		"type": "string"
+																	},
+																	"ua_postCode": {
+																		"type": "string"
+																	},
+																	"ua_streetType": {
+																		"type": "string"
+																	},
+																	"costAssessment": {
+																		"type": "string"
+																	},
+																	"costRent_declcomua": {
+																		"type": "string"
+																	},
+																	"costAssessment_extendedstatus": {
+																		"type": "string"
+																	},
+																	"ua_housePartNum_extendedstatus": {
+																		"type": "string"
+																	},
+																	"ua_apartmentsNum_extendedstatus": {
+																		"type": "string"
+																	}
+																}
+															},
+															"2": {
+																"type": "object",
+																"properties": {
+																	"city": {
+																		"type": "string"
+																	},
+																	"person": {
+																		"type": "string"
+																	},
+																	"place_oblast_declcomua": {
+																		"type": "string"
+																	},
+																	"place_address_declcomua": {
+																		"type": "string"
+																	},
+																	"rights": {
+																		"type": "object",
+																		"properties": {
+																			"family": {
+																				"type": "object",
+																				"properties": {
+																					"citizen": {
+																						"type": "string"
+																					},
+																					"ua_city": {
+																						"type": "string"
+																					},
+																					"ua_street": {
+																						"type": "string"
+																					},
+																					"ua_lastname": {
+																						"type": "string"
+																					},
+																					"ua_postCode": {
+																						"type": "string"
+																					},
+																					"eng_lastname": {
+																						"type": "string"
+																					},
+																					"eng_postCode": {
+																						"type": "string"
+																					},
+																					"rightBelongs": {
+																						"type": "string"
+																					},
+																					"ua_firstname": {
+																						"type": "string"
+																					},
+																					"ukr_lastname": {
+																						"type": "string"
+																					},
+																					"eng_firstname": {
+																						"type": "string"
+																					},
+																					"ownershipType": {
+																						"type": "string"
+																					},
+																					"ua_middlename": {
+																						"type": "string"
+																					},
+																					"ua_streetType": {
+																						"type": "string"
+																					},
+																					"ukr_firstname": {
+																						"type": "string"
+																					},
+																					"eng_middlename": {
+																						"type": "string"
+																					},
+																					"otherOwnership": {
+																						"type": "string"
+																					},
+																					"ukr_middlename": {
+																						"type": "string"
+																					},
+																					"rights_cityPath": {
+																						"type": "string"
+																					},
+																					"ua_company_name": {
+																						"type": "string"
+																					},
+																					"eng_company_name": {
+																						"type": "string"
+																					},
+																					"ukr_company_name": {
+																						"type": "string"
+																					},
+																					"percent-ownership": {
+																						"type": "string"
+																					},
+																					"ua_street_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_houseNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ukr_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_housePartNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_apartmentsNum_extendedstatus": {
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"country": {
+																		"type": "string"
+																	},
+																	"cityPath": {
+																		"type": "string"
+																	},
+																	"costDate": {
+																		"type": "string"
+																	},
+																	"district": {
+																		"type": "string"
+																	},
+																	"postCode": {
+																		"type": "string"
+																	},
+																	"iteration": {
+																		"type": "string"
+																	},
+																	"totalArea": {
+																		"type": "number"
+																	},
+																	"ua_street": {
+																		"type": "string"
+																	},
+																	"owningDate": {
+																		"type": "string"
+																	},
+																	"objectType": {
+																		"type": "string"
+																	},
+																	"otherObjectType": {
+																		"type": "string"
+																	},
+																	"ua_cityType": {
+																		"type": "string"
+																	},
+																	"ua_postCode": {
+																		"type": "string"
+																	},
+																	"ua_streetType": {
+																		"type": "string"
+																	},
+																	"costAssessment": {
+																		"type": "string"
+																	},
+																	"costRent_declcomua": {
+																		"type": "string"
+																	},
+																	"costAssessment_extendedstatus": {
+																		"type": "string"
+																	},
+																	"ua_housePartNum_extendedstatus": {
+																		"type": "string"
+																	},
+																	"ua_apartmentsNum_extendedstatus": {
+																		"type": "string"
+																	}
+																}
+															}
+														}
+													},
+													"step_6": {
+														"type": "object",
+														"properties": {
+															"1": {
+																"type": "object",
+																"properties": {
+																	"brand": {
+																		"type": "string"
+																	},
+																	"model": {
+																		"type": "string"
+																	},
+																	"person": {
+																		"type": "string"
+																	},
+																	"rights": {
+																		"type": "object",
+																		"properties": {
+																			"1": {
+																				"type": "object",
+																				"properties": {
+																					"citizen": {
+																						"type": "string"
+																					},
+																					"ua_city": {
+																						"type": "string"
+																					},
+																					"ua_street": {
+																						"type": "string"
+																					},
+																					"ua_lastname": {
+																						"type": "string"
+																					},
+																					"ua_postCode": {
+																						"type": "string"
+																					},
+																					"eng_lastname": {
+																						"type": "string"
+																					},
+																					"eng_postCode": {
+																						"type": "string"
+																					},
+																					"rightBelongs": {
+																						"type": "string"
+																					},
+																					"ua_firstname": {
+																						"type": "string"
+																					},
+																					"ukr_lastname": {
+																						"type": "string"
+																					},
+																					"eng_firstname": {
+																						"type": "string"
+																					},
+																					"ownershipType": {
+																						"type": "string"
+																					},
+																					"ua_middlename": {
+																						"type": "string"
+																					},
+																					"ua_streetType": {
+																						"type": "string"
+																					},
+																					"ukr_firstname": {
+																						"type": "string"
+																					},
+																					"eng_middlename": {
+																						"type": "string"
+																					},
+																					"otherOwnership": {
+																						"type": "string"
+																					},
+																					"ukr_middlename": {
+																						"type": "string"
+																					},
+																					"rights_cityPath": {
+																						"type": "string"
+																					},
+																					"ua_company_name": {
+																						"type": "string"
+																					},
+																					"eng_company_name": {
+																						"type": "string"
+																					},
+																					"ukr_company_name": {
+																						"type": "string"
+																					},
+																					"percent-ownership": {
+																						"type": "string"
+																					},
+																					"ua_street_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_houseNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ukr_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_housePartNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_apartmentsNum_extendedstatus": {
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"costDate": {
+																		"type": "string"
+																	},
+																	"costRent_declcomua": {
+																		"type": "string"
+																	},
+																	"iteration": {
+																		"type": "string"
+																	},
+																	"objectType": {
+																		"type": "string"
+																	},
+																	"otherObjectType": {
+																		"type": "string"
+																	},
+																	"owningDate": {
+																		"type": "string"
+																	},
+																	"graduationYear": {
+																		"type": "string"
+																	}
+																}
+															}
+														}
+													},
+													"step_7": {
+														"type": "object"
+													},
+													"step_8": {
+														"type": "object"
+													},
+													"step_12": {
+														"type": "object"
+													},
+													"step_13": {
+														"type": "object",
+														"properties": {
+															"1": {
+																"type": "object",
+																"properties": {
+																	"person": {
+																		"type": "string"
+																	},
+																	"currency": {
+																		"type": "string"
+																	},
+																	"guarantor": {
+																		"type": "string"
+																	},
+																	"iteration": {
+																		"type": "string"
+																	},
+																	"dateOrigin": {
+																		"type": "string"
+																	},
+																	"objectType": {
+																		"type": "string"
+																	},
+																	"otherObjectType": {
+																		"type": "string"
+																	},
+																	"margin-emitent": {
+																		"type": "string"
+																	},
+																	"sizeObligation": {
+																		"type": "string"
+																	},
+																	"emitent_citizen": {
+																		"type": "string"
+																	},
+																	"guarantor_exist_": {
+																		"type": "string"
+																	},
+																	"sizeAssets_abroad_declcomua": {
+																		"type": "string"
+																	},
+																	"guarantor_realty": {
+																		"type": "string"
+																	},
+																	"ownerThirdPerson": {
+																		"type": "string"
+																	},
+																	"emitent_ua_lastname": {
+																		"type": "string"
+																	},
+																	"emitent_eng_fullname": {
+																		"type": "string"
+																	},
+																	"emitent_ua_firstname": {
+																		"type": "string"
+																	},
+																	"emitent_ukr_fullname": {
+																		"type": "string"
+																	},
+																	"emitent_ua_middlename": {
+																		"type": "string"
+																	},
+																	"ownerThirdPersonThing": {
+																		"type": "string"
+																	},
+																	"emitent_ua_company_name": {
+																		"type": "string"
+																	},
+																	"guarantor_realty_exist_": {
+																		"type": "string"
+																	},
+																	"emitent_eng_company_name": {
+																		"type": "string"
+																	},
+																	"emitent_ukr_company_name": {
+																		"type": "string"
+																	},
+																	"emitent_ua_sameRegLivingAddress": {
+																		"type": "string"
+																	},
+																	"emitent_eng_company_code_extendedstatus": {
+																		"type": "string"
+																	}
+																}
+															}
+														}
+													},
+													"step_11": {
+														"type": "object",
+														"properties": {
+															"1": {
+																"type": "object",
+																"properties": {
+																	"person": {
+																		"type": "string"
+																	},
+																	"rights": {
+																		"type": "object",
+																		"properties": {
+																			"1": {
+																				"type": "object",
+																				"properties": {
+																					"citizen": {
+																						"type": "string"
+																					},
+																					"ua_city": {
+																						"type": "string"
+																					},
+																					"ua_street": {
+																						"type": "string"
+																					},
+																					"ua_lastname": {
+																						"type": "string"
+																					},
+																					"ua_postCode": {
+																						"type": "string"
+																					},
+																					"eng_lastname": {
+																						"type": "string"
+																					},
+																					"eng_postCode": {
+																						"type": "string"
+																					},
+																					"rightBelongs": {
+																						"type": "string"
+																					},
+																					"ua_firstname": {
+																						"type": "string"
+																					},
+																					"ukr_lastname": {
+																						"type": "string"
+																					},
+																					"eng_firstname": {
+																						"type": "string"
+																					},
+																					"ownershipType": {
+																						"type": "string"
+																					},
+																					"ua_middlename": {
+																						"type": "string"
+																					},
+																					"ua_streetType": {
+																						"type": "string"
+																					},
+																					"ukr_firstname": {
+																						"type": "string"
+																					},
+																					"eng_middlename": {
+																						"type": "string"
+																					},
+																					"otherOwnership": {
+																						"type": "string"
+																					},
+																					"ukr_middlename": {
+																						"type": "string"
+																					},
+																					"rights_cityPath": {
+																						"type": "string"
+																					},
+																					"ua_company_name": {
+																						"type": "string"
+																					},
+																					"eng_company_name": {
+																						"type": "string"
+																					},
+																					"ukr_company_name": {
+																						"type": "string"
+																					},
+																					"percent-ownership": {
+																						"type": "string"
+																					},
+																					"ua_street_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_houseNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ukr_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_housePartNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_apartmentsNum_extendedstatus": {
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"iteration": {
+																		"type": "string"
+																	},
+																	"objectType": {
+																		"type": "string"
+																	},
+																	"otherObjectType": {
+																		"type": "string"
+																	},
+																	"sizeIncome": {
+																		"type": "string"
+																	},
+																	"inner_or_outer_declcomua": {
+																		"type": "string"
+																	},
+																	"source_citizen": {
+																		"type": "string"
+																	},
+																	"source_ua_lastname": {
+																		"type": "string"
+																	},
+																	"source_eng_fullname": {
+																		"type": "string"
+																	},
+																	"source_ua_firstname": {
+																		"type": "string"
+																	},
+																	"source_ukr_fullname": {
+																		"type": "string"
+																	},
+																	"source_ua_middlename": {
+																		"type": "string"
+																	},
+																	"source_ua_company_name": {
+																		"type": "string"
+																	},
+																	"source_eng_company_name": {
+																		"type": "string"
+																	},
+																	"income_country_name_declcomua": {
+																		"type": "string"
+																	},
+																	"source_ukr_company_name": {
+																		"type": "string"
+																	},
+																	"source_ua_sameRegLivingAddress": {
+																		"type": "string"
+																	}
+																}
+															},
+															"2": {
+																"type": "object",
+																"properties": {
+																	"person": {
+																		"type": "string"
+																	},
+																	"rights": {
+																		"type": "object",
+																		"properties": {
+																			"family": {
+																				"type": "object",
+																				"properties": {
+																					"citizen": {
+																						"type": "string"
+																					},
+																					"ua_city": {
+																						"type": "string"
+																					},
+																					"ua_street": {
+																						"type": "string"
+																					},
+																					"ua_lastname": {
+																						"type": "string"
+																					},
+																					"ua_postCode": {
+																						"type": "string"
+																					},
+																					"eng_lastname": {
+																						"type": "string"
+																					},
+																					"eng_postCode": {
+																						"type": "string"
+																					},
+																					"rightBelongs": {
+																						"type": "string"
+																					},
+																					"ua_firstname": {
+																						"type": "string"
+																					},
+																					"ukr_lastname": {
+																						"type": "string"
+																					},
+																					"eng_firstname": {
+																						"type": "string"
+																					},
+																					"ownershipType": {
+																						"type": "string"
+																					},
+																					"ua_middlename": {
+																						"type": "string"
+																					},
+																					"ua_streetType": {
+																						"type": "string"
+																					},
+																					"ukr_firstname": {
+																						"type": "string"
+																					},
+																					"eng_middlename": {
+																						"type": "string"
+																					},
+																					"otherOwnership": {
+																						"type": "string"
+																					},
+																					"ukr_middlename": {
+																						"type": "string"
+																					},
+																					"rights_cityPath": {
+																						"type": "string"
+																					},
+																					"ua_company_name": {
+																						"type": "string"
+																					},
+																					"eng_company_name": {
+																						"type": "string"
+																					},
+																					"ukr_company_name": {
+																						"type": "string"
+																					},
+																					"percent-ownership": {
+																						"type": "string"
+																					},
+																					"ua_street_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_houseNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ukr_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_housePartNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_apartmentsNum_extendedstatus": {
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"iteration": {
+																		"type": "string"
+																	},
+																	"objectType": {
+																		"type": "string"
+																	},
+																	"otherObjectType": {
+																		"type": "string"
+																	},
+																	"sizeIncome": {
+																		"type": "string"
+																	},
+																	"inner_or_outer_declcomua": {
+																		"type": "string"
+																	},
+																	"source_citizen": {
+																		"type": "string"
+																	},
+																	"source_ua_lastname": {
+																		"type": "string"
+																	},
+																	"source_eng_fullname": {
+																		"type": "string"
+																	},
+																	"source_ua_firstname": {
+																		"type": "string"
+																	},
+																	"source_ukr_fullname": {
+																		"type": "string"
+																	},
+																	"source_ua_middlename": {
+																		"type": "string"
+																	},
+																	"source_ua_company_name": {
+																		"type": "string"
+																	},
+																	"source_eng_company_name": {
+																		"type": "string"
+																	},
+																	"income_country_name_declcomua": {
+																		"type": "string"
+																	},
+																	"source_ukr_company_name": {
+																		"type": "string"
+																	},
+																	"source_ua_sameRegLivingAddress": {
+																		"type": "string"
+																	}
+																}
+															},
+															"3": {
+																"type": "object",
+																"properties": {
+																	"person": {
+																		"type": "string"
+																	},
+																	"rights": {
+																		"type": "object",
+																		"properties": {
+																			"1": {
+																				"type": "object",
+																				"properties": {
+																					"citizen": {
+																						"type": "string"
+																					},
+																					"ua_city": {
+																						"type": "string"
+																					},
+																					"ua_street": {
+																						"type": "string"
+																					},
+																					"ua_lastname": {
+																						"type": "string"
+																					},
+																					"ua_postCode": {
+																						"type": "string"
+																					},
+																					"eng_lastname": {
+																						"type": "string"
+																					},
+																					"eng_postCode": {
+																						"type": "string"
+																					},
+																					"rightBelongs": {
+																						"type": "string"
+																					},
+																					"ua_firstname": {
+																						"type": "string"
+																					},
+																					"ukr_lastname": {
+																						"type": "string"
+																					},
+																					"eng_firstname": {
+																						"type": "string"
+																					},
+																					"ownershipType": {
+																						"type": "string"
+																					},
+																					"ua_middlename": {
+																						"type": "string"
+																					},
+																					"ua_streetType": {
+																						"type": "string"
+																					},
+																					"ukr_firstname": {
+																						"type": "string"
+																					},
+																					"eng_middlename": {
+																						"type": "string"
+																					},
+																					"otherOwnership": {
+																						"type": "string"
+																					},
+																					"ukr_middlename": {
+																						"type": "string"
+																					},
+																					"rights_cityPath": {
+																						"type": "string"
+																					},
+																					"ua_company_name": {
+																						"type": "string"
+																					},
+																					"eng_company_name": {
+																						"type": "string"
+																					},
+																					"ukr_company_name": {
+																						"type": "string"
+																					},
+																					"percent-ownership": {
+																						"type": "string"
+																					},
+																					"ua_street_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_houseNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ukr_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_housePartNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_apartmentsNum_extendedstatus": {
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"iteration": {
+																		"type": "string"
+																	},
+																	"objectType": {
+																		"type": "string"
+																	},
+																	"otherObjectType": {
+																		"type": "string"
+																	},
+																	"sizeIncome": {
+																		"type": "string"
+																	},
+																	"inner_or_outer_declcomua": {
+																		"type": "string"
+																	},
+																	"source_citizen": {
+																		"type": "string"
+																	},
+																	"source_ua_lastname": {
+																		"type": "string"
+																	},
+																	"source_eng_fullname": {
+																		"type": "string"
+																	},
+																	"source_ua_firstname": {
+																		"type": "string"
+																	},
+																	"source_ukr_fullname": {
+																		"type": "string"
+																	},
+																	"source_ua_middlename": {
+																		"type": "string"
+																	},
+																	"source_ua_company_name": {
+																		"type": "string"
+																	},
+																	"source_eng_company_name": {
+																		"type": "string"
+																	},
+																	"income_country_name_declcomua": {
+																		"type": "string"
+																	},
+																	"source_ukr_company_name": {
+																		"type": "string"
+																	},
+																	"source_ua_sameRegLivingAddress": {
+																		"type": "string"
+																	}
+																}
+															},
+															"4": {
+																"type": "object",
+																"properties": {
+																	"person": {
+																		"type": "string"
+																	},
+																	"rights": {
+																		"type": "object",
+																		"properties": {
+																			"family": {
+																				"type": "object",
+																				"properties": {
+																					"citizen": {
+																						"type": "string"
+																					},
+																					"ua_city": {
+																						"type": "string"
+																					},
+																					"ua_street": {
+																						"type": "string"
+																					},
+																					"ua_lastname": {
+																						"type": "string"
+																					},
+																					"ua_postCode": {
+																						"type": "string"
+																					},
+																					"eng_lastname": {
+																						"type": "string"
+																					},
+																					"eng_postCode": {
+																						"type": "string"
+																					},
+																					"rightBelongs": {
+																						"type": "string"
+																					},
+																					"ua_firstname": {
+																						"type": "string"
+																					},
+																					"ukr_lastname": {
+																						"type": "string"
+																					},
+																					"eng_firstname": {
+																						"type": "string"
+																					},
+																					"ownershipType": {
+																						"type": "string"
+																					},
+																					"ua_middlename": {
+																						"type": "string"
+																					},
+																					"ua_streetType": {
+																						"type": "string"
+																					},
+																					"ukr_firstname": {
+																						"type": "string"
+																					},
+																					"eng_middlename": {
+																						"type": "string"
+																					},
+																					"otherOwnership": {
+																						"type": "string"
+																					},
+																					"ukr_middlename": {
+																						"type": "string"
+																					},
+																					"rights_cityPath": {
+																						"type": "string"
+																					},
+																					"ua_company_name": {
+																						"type": "string"
+																					},
+																					"eng_company_name": {
+																						"type": "string"
+																					},
+																					"ukr_company_name": {
+																						"type": "string"
+																					},
+																					"percent-ownership": {
+																						"type": "string"
+																					},
+																					"ua_street_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_houseNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ukr_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_housePartNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_apartmentsNum_extendedstatus": {
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"iteration": {
+																		"type": "string"
+																	},
+																	"objectType": {
+																		"type": "string"
+																	},
+																	"otherObjectType": {
+																		"type": "string"
+																	},
+																	"sizeIncome": {
+																		"type": "string"
+																	},
+																	"inner_or_outer_declcomua": {
+																		"type": "string"
+																	},
+																	"source_citizen": {
+																		"type": "string"
+																	},
+																	"source_ua_lastname": {
+																		"type": "string"
+																	},
+																	"source_eng_fullname": {
+																		"type": "string"
+																	},
+																	"source_ua_firstname": {
+																		"type": "string"
+																	},
+																	"source_ukr_fullname": {
+																		"type": "string"
+																	},
+																	"source_ua_middlename": {
+																		"type": "string"
+																	},
+																	"source_ua_company_name": {
+																		"type": "string"
+																	},
+																	"source_eng_company_name": {
+																		"type": "string"
+																	},
+																	"income_country_name_declcomua": {
+																		"type": "string"
+																	},
+																	"source_ukr_company_name": {
+																		"type": "string"
+																	},
+																	"source_ua_sameRegLivingAddress": {
+																		"type": "string"
+																	}
+																}
+															},
+															"5": {
+																"type": "object",
+																"properties": {
+																	"person": {
+																		"type": "string"
+																	},
+																	"rights": {
+																		"type": "object",
+																		"properties": {
+																			"1": {
+																				"type": "object",
+																				"properties": {
+																					"citizen": {
+																						"type": "string"
+																					},
+																					"ua_city": {
+																						"type": "string"
+																					},
+																					"ua_street": {
+																						"type": "string"
+																					},
+																					"ua_lastname": {
+																						"type": "string"
+																					},
+																					"ua_postCode": {
+																						"type": "string"
+																					},
+																					"eng_lastname": {
+																						"type": "string"
+																					},
+																					"eng_postCode": {
+																						"type": "string"
+																					},
+																					"rightBelongs": {
+																						"type": "string"
+																					},
+																					"ua_firstname": {
+																						"type": "string"
+																					},
+																					"ukr_lastname": {
+																						"type": "string"
+																					},
+																					"eng_firstname": {
+																						"type": "string"
+																					},
+																					"ownershipType": {
+																						"type": "string"
+																					},
+																					"ua_middlename": {
+																						"type": "string"
+																					},
+																					"ua_streetType": {
+																						"type": "string"
+																					},
+																					"ukr_firstname": {
+																						"type": "string"
+																					},
+																					"eng_middlename": {
+																						"type": "string"
+																					},
+																					"otherOwnership": {
+																						"type": "string"
+																					},
+																					"ukr_middlename": {
+																						"type": "string"
+																					},
+																					"rights_cityPath": {
+																						"type": "string"
+																					},
+																					"ua_company_name": {
+																						"type": "string"
+																					},
+																					"eng_company_name": {
+																						"type": "string"
+																					},
+																					"ukr_company_name": {
+																						"type": "string"
+																					},
+																					"percent-ownership": {
+																						"type": "string"
+																					},
+																					"ua_street_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_houseNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_postCode_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"eng_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ukr_middlename_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_housePartNum_extendedstatus": {
+																						"type": "string"
+																					},
+																					"ua_apartmentsNum_extendedstatus": {
+																						"type": "string"
+																					}
+																				}
+																			}
+																		}
+																	},
+																	"iteration": {
+																		"type": "string"
+																	},
+																	"objectType": {
+																		"type": "string"
+																	},
+																	"otherObjectType": {
+																		"type": "string"
+																	},
+																	"sizeIncome": {
+																		"type": "string"
+																	},
+																	"inner_or_outer_declcomua": {
+																		"type": "string"
+																	},
+																	"source_citizen": {
+																		"type": "string"
+																	},
+																	"source_ua_lastname": {
+																		"type": "string"
+																	},
+																	"source_eng_fullname": {
+																		"type": "string"
+																	},
+																	"source_ua_firstname": {
+																		"type": "string"
+																	},
+																	"source_ukr_fullname": {
+																		"type": "string"
+																	},
+																	"source_ua_middlename": {
+																		"type": "string"
+																	},
+																	"source_ua_company_name": {
+																		"type": "string"
+																	},
+																	"source_eng_company_name": {
+																		"type": "string"
+																	},
+																	"income_country_name_declcomua": {
+																		"type": "string"
+																	},
+																	"source_ukr_company_name": {
+																		"type": "string"
+																	},
+																	"source_ua_sameRegLivingAddress": {
+																		"type": "string"
+																	}
+																}
+															}
+														}
+													},
+													"step_14": {
+														"type": "object"
+													},
+													"step_4": {
+														"type": "object"
+													},
+													"step_5": {
+														"type": "object"
+													},
+													"step_9": {
+														"type": "object"
+													},
+													"step_10": {
+														"type": "object"
+													},
+													"step_15": {
+														"type": "object"
+													},
+													"step_16": {
+														"type": "object"
+													}
+												}
+											}
+										}
+									},
+									"related_entities": {
+										"type": "object",
+										"properties": {
+											"people": {
+												"type": "object",
+												"properties": {
+													"family": {
+														"type": "array",
+														"items": {
+															"type": "string"
+														}
+													}
+												}
+											},
+											"documents": {
+												"type": "object",
+												"properties": {
+													"corrected": {
+														"type": "array"
+													},
+													"originals": {
+														"type": "array"
+													}
+												}
+											},
+											"companies": {
+												"type": "object",
+												"properties": {
+													"owned": {
+														"type": "array"
+													},
+													"related": {
+														"type": "array"
+													},
+													"all": {
+														"type": "array"
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"language": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
