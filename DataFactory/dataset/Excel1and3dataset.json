@@ -1,0 +1,69 @@
+{
+	"name": "Excel1and3dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PoriBlobStorageFromDataFactory",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Pori-1and3.csv",
+				"folderPath": "ExternalExcelFiles",
+				"container": "pori-blob-container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Declaration links",
+				"type": "String"
+			},
+			{
+				"name": "Name of the public official in English",
+				"type": "String"
+			},
+			{
+				"name": "Name of the public official in Ukrainian",
+				"type": "String"
+			},
+			{
+				"name": "Tax ID number",
+				"type": "String"
+			},
+			{
+				"name": "The year of filing of return",
+				"type": "String"
+			},
+			{
+				"name": "Name of the spouse",
+				"type": "String"
+			},
+			{
+				"name": "Name of the childrens 1 used for deductions",
+				"type": "String"
+			},
+			{
+				"name": "Name of the childrens 2 used for deductions",
+				"type": "String"
+			},
+			{
+				"name": "Name of the childrens 3 used for deductions",
+				"type": "String"
+			},
+			{
+				"name": "Income of the public official",
+				"type": "String"
+			},
+			{
+				"name": "Income of the family",
+				"type": "String"
+			}
+		]
+	}
+}
