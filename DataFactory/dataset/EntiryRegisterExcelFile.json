@@ -1,0 +1,55 @@
+{
+	"name": "EntiryRegisterExcelFile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PoriBlobStorageFromDataFactory",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "pori-entity register.xlsx",
+				"folderPath": "ExternalExcelFiles",
+				"container": "pori-blob-container"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Name of the legal entity",
+				"type": "String"
+			},
+			{
+				"name": "Organizational and legal form",
+				"type": "String"
+			},
+			{
+				"name": "Date of registration",
+				"type": "String"
+			},
+			{
+				"name": "Identification code",
+				"type": "String"
+			},
+			{
+				"name": "Information about the ultimate beneficial owner",
+				"type": "String"
+			},
+			{
+				"name": "Tax number",
+				"type": "String"
+			},
+			{
+				"name": "Location of the legal entity",
+				"type": "String"
+			},
+			{
+				"name": "Types of activity",
+				"type": "String"
+			}
+		]
+	}
+}
