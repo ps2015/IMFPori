@@ -1,0 +1,275 @@
+{
+	"name": "ExcelADFLookupVehicles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PoriBlobStorageFromDataFactory",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "LookupVehicles.xlsx",
+				"folderPath": "ADFCalculated",
+				"container": "pori-blob-container"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "first_name",
+				"type": "String"
+			},
+			{
+				"name": "last_name",
+				"type": "String"
+			},
+			{
+				"name": "patronymic",
+				"type": "String"
+			},
+			{
+				"name": "declaration_year",
+				"type": "String"
+			},
+			{
+				"name": "position",
+				"type": "String"
+			},
+			{
+				"name": "Income_personal",
+				"type": "String"
+			},
+			{
+				"name": "income_family",
+				"type": "String"
+			},
+			{
+				"name": "objectType_Immovables_Personal",
+				"type": "String"
+			},
+			{
+				"name": "totalArea_Immovables_Personal",
+				"type": "String"
+			},
+			{
+				"name": "objectType_land_personal",
+				"type": "String"
+			},
+			{
+				"name": "totalArea_land_personal",
+				"type": "String"
+			},
+			{
+				"name": "space_Immovables_family_total",
+				"type": "String"
+			},
+			{
+				"name": "bank45_sum_Personal_total",
+				"type": "String"
+			},
+			{
+				"name": "bank46_sum_Personal_total",
+				"type": "String"
+			},
+			{
+				"name": "SizeIncome_total_personal",
+				"type": "String"
+			},
+			{
+				"name": "SizeIncome_total_family",
+				"type": "String"
+			},
+			{
+				"name": "SizeAssets_total",
+				"type": "String"
+			},
+			{
+				"name": "sizeObligation_total_personal",
+				"type": "String"
+			},
+			{
+				"name": "sizeObligation_total_family",
+				"type": "String"
+			},
+			{
+				"name": "costAmount_total",
+				"type": "String"
+			},
+			{
+				"name": "bank47_sum_personal_total",
+				"type": "String"
+			},
+			{
+				"name": "bank51_sum_family_total",
+				"type": "String"
+			},
+			{
+				"name": "bank52_sum_family_total",
+				"type": "String"
+			},
+			{
+				"name": "bank53_sum_family_total",
+				"type": "String"
+			},
+			{
+				"name": "space_land_family_total",
+				"type": "String"
+			},
+			{
+				"name": "Family_all",
+				"type": "String"
+			},
+			{
+				"name": "Key",
+				"type": "String"
+			},
+			{
+				"name": "total_Immovable_asset_value_costDate",
+				"type": "String"
+			},
+			{
+				"name": "Declaration links",
+				"type": "String"
+			},
+			{
+				"name": "Name of the public official in English",
+				"type": "String"
+			},
+			{
+				"name": "Name of the public official in Ukrainian",
+				"type": "String"
+			},
+			{
+				"name": "Tax ID number",
+				"type": "String"
+			},
+			{
+				"name": "The year of filing of return",
+				"type": "String"
+			},
+			{
+				"name": "Name of the spouse",
+				"type": "String"
+			},
+			{
+				"name": "Name of the childrens 1 used for deductions",
+				"type": "String"
+			},
+			{
+				"name": "Name of the childrens 2 used for deductions",
+				"type": "String"
+			},
+			{
+				"name": "Name of the childrens 3 used for deductions",
+				"type": "String"
+			},
+			{
+				"name": "Income of the public official",
+				"type": "String"
+			},
+			{
+				"name": "Income of the family",
+				"type": "String"
+			},
+			{
+				"name": "Securities-1",
+				"type": "String"
+			},
+			{
+				"name": "% of the entity6",
+				"type": "String"
+			},
+			{
+				"name": "Securities-2",
+				"type": "String"
+			},
+			{
+				"name": "% of the entity8",
+				"type": "String"
+			},
+			{
+				"name": "Equity rights-1",
+				"type": "String"
+			},
+			{
+				"name": "% of the entity10",
+				"type": "String"
+			},
+			{
+				"name": "Equity rights-2",
+				"type": "String"
+			},
+			{
+				"name": "% of the entity12",
+				"type": "String"
+			},
+			{
+				"name": "Organizational and legal form",
+				"type": "String"
+			},
+			{
+				"name": "Date of registration",
+				"type": "String"
+			},
+			{
+				"name": "Identification code",
+				"type": "String"
+			},
+			{
+				"name": "Information about the ultimate beneficial owner",
+				"type": "String"
+			},
+			{
+				"name": "Tax number",
+				"type": "String"
+			},
+			{
+				"name": "Location of the legal entity",
+				"type": "String"
+			},
+			{
+				"name": "Name of the legal entity",
+				"type": "String"
+			},
+			{
+				"name": "owned_companies_all",
+				"type": "String"
+			},
+			{
+				"name": "related_companies_all",
+				"type": "String"
+			},
+			{
+				"name": "all_companies_all",
+				"type": "String"
+			},
+			{
+				"name": "brand_vehicle_personal_all",
+				"type": "String"
+			},
+			{
+				"name": "brand_info_vehicle_personal_all",
+				"type": "String"
+			},
+			{
+				"name": "year_vehicle_personal_all",
+				"type": "String"
+			},
+			{
+				"name": "brand_vehicle_family_all",
+				"type": "String"
+			},
+			{
+				"name": "brand_info_vehicle_family_all",
+				"type": "String"
+			},
+			{
+				"name": "year_vehicle_family_all",
+				"type": "String"
+			}
+		]
+	}
+}

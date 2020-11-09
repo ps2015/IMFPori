@@ -1,0 +1,47 @@
+{
+	"name": "ExcelADFSelectColumnsPrevYear",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PoriBlobStorageFromDataFactory",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "SelectColumnsNeededForPrevYear.xlsx",
+				"folderPath": "ADFCalculated",
+				"container": "pori-blob-container"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Key_Prev",
+				"type": "String"
+			},
+			{
+				"name": "declaration_year_Prev",
+				"type": "String"
+			},
+			{
+				"name": "totalArea_Immovables_Personal_Prev",
+				"type": "String"
+			},
+			{
+				"name": "sizeObligation_total_personal_Prev",
+				"type": "String"
+			},
+			{
+				"name": "sizeObligation_total_family_Prev",
+				"type": "String"
+			},
+			{
+				"name": "total_Immovable_asset_value_costDate_Prev",
+				"type": "String"
+			}
+		]
+	}
+}
