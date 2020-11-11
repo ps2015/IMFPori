@@ -1,0 +1,16 @@
+{
+	"name": "PoriSQLConnectionNew",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PoriDatabaseNew",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PoriMain"
+		}
+	}
+}
