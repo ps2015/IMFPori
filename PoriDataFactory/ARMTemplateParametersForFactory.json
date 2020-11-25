@@ -5,13 +5,13 @@
 		"factoryName": {
 			"value": "PoriDataFactory"
 		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
 		"PoriAzureSqlDatabase_connectionString": {
 			"value": ""
 		},
 		"PoriBlobStorageFromDataFactory_connectionString": {
-			"value": ""
-		},
-		"AzureSqlDatabase1_connectionString": {
 			"value": ""
 		},
 		"PoriDatabaseNew_connectionString": {
