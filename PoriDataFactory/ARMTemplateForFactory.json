@@ -7,14 +7,6 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "PoriDataFactory"
 		},
-		"AzureSqlDatabase1_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
-		},
-		"PoriAzureSqlDatabase_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'PoriAzureSqlDatabase'"
-		},
 		"PoriBlobStorageFromDataFactory_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'PoriBlobStorageFromDataFactory'"
@@ -3844,32 +3836,6 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/PoriDatabaseNew')]"
 			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase1')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureSqlDatabase1_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/PoriAzureSqlDatabase')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('PoriAzureSqlDatabase_connectionString')]"
-				}
-			},
-			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/PoriBlobStorageFromDataFactory')]",
